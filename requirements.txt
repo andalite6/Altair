@@ -1,7 +1,60 @@
 openai
-requirements.txt:
-streamlit>=1.24.0
-pandas>=1.5.0
-numpy>=1.23.0
-typing>=3.7.4
-dataclasses>=0.6
+streamlit==1.25.0          # UI Framework
+torch==2.0.1              # ML Operations
+transformers==4.31.0      # Language Models
+numpy==1.24.3             # Numerical Operations
+pandas==2.0.3             # Data Manipulation
+python-dotenv==1.0.0      # Environment Variables
+cryptography==41.0.2      # Encryption
+pyyaml==6.0.1            # Configuration
+fastapi==0.100.0          # API Framework
+uvicorn==0.23.1          # ASGI Server
+aiohttp==3.8.5           # Async HTTP
+sqlalchemy==2.0.19        # ORM
+redis==4.6.0             # Caching
+prometheus-client==0.17.1  # Metrics
+sentry-sdk==1.28.1        # Error Tracking
+import subprocess
+import sys
+
+def install_requirements():
+    critical_packages = [
+        'streamlit==1.25.0',
+        'torch==2.0.1',
+        'transformers==4.31.0',
+        'python-dotenv==1.0.0',
+        'fastapi==0.100.0',
+        'sqlalchemy==2.0.19',
+        'prometheus-client==0.17.1'
+    ]
+    
+    for package in critical_packages:
+        try:
+            subprocess.check_call([
+                sys.executable, 
+                "-m", 
+                "pip", 
+                "install", 
+                package
+            ])
+            print(f"Successfully installed {package}")
+        except subprocess.CalledProcessError:
+            print(f"Failed to install {package}")
+            return False
+    return True
+
+# Validation function
+def validate_installation():
+    import pkg_resources
+    installed = {pkg.key for pkg in pkg_resources.working_set}
+    required = {
+        'streamlit',
+        'torch',
+        'transformers',
+        'python-dotenv',
+        'fastapi',
+        'sqlalchemy',
+        'prometheus-client'
+    }
+    missing = required - installed
+    return list(missing)
