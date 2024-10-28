@@ -1,6 +1,7 @@
 openai
-from transformers import AutoModelForCasualLM, AutoTokenizer
-requests
-logging
-pickle
-Torch
+requirements.txt:
+streamlit>=1.24.0
+pandas>=1.5.0
+numpy>=1.23.0
+typing>=3.7.4
+dataclasses>=0.6
