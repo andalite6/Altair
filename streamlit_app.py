@@ -12,6 +12,7 @@ from datetime import datetime
 from typing import Dict, List, Tuple, Optional
 from dataclasses import dataclass
 from dotenv import load_dotenv
+pip install --upgrade pip
 
 # Initialize the environment and logging
 load_dotenv()
