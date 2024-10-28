@@ -1,9 +1,6 @@
 openai
-pandas
-numpy
+from transformers import AutoModelForCasualLM, AutoTokenizer
 requests
-json
-csv
-os
 logging
-hashlib
+pickle
+Torch
