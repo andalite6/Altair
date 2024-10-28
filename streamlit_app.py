@@ -21,7 +21,7 @@ Insight report writing involves analyzing data to extract meaningful patterns an
 """
 
 # Set your OpenAI API key (replace with your actual API key)
-openai.api_key = "your_openai_api_key_here"
+openai.api_key = "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"
 
 # Caching the CSV processing
 @st.cache_data
