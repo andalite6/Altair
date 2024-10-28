@@ -214,3 +214,4 @@ def create_streamlit_ui():
 
 if __name__ == "__main__":
     create_streamlit_ui()
+streamlit run full_application.py
