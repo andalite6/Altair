@@ -1,1 +1,9 @@
 openai
+pandas
+numpy
+requests
+json
+csv
+os
+logging
+hashlib
