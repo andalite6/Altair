@@ -1,8 +1,3 @@
-Altair project full code insight assist with auto cite function for testing V1.0
-
-
-# app.py
-
 import streamlit as st
 import pandas as pd
 import openai
