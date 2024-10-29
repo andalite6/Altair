@@ -1,19 +1,19 @@
 openai
-streamlit==1.25.0          # UI Framework
-torch==2.0.1              # ML Operations
-transformers==4.31.0      # Language Models
-numpy==1.24.3             # Numerical Operations
-pandas==2.0.3             # Data Manipulation
-python-dotenv==1.0.0      # Environment Variables
-cryptography==41.0.2      # Encryption
-pyyaml==6.0.1            # Configuration
-fastapi==0.100.0          # API Framework
-uvicorn==0.23.1          # ASGI Server
-aiohttp==3.8.5           # Async HTTP
-sqlalchemy==2.0.19        # ORM
-redis==4.6.0             # Caching
-prometheus-client==0.17.1  # Metrics
-sentry-sdk==1.28.1        # Error Tracking
+streamlit==1.25.0        
+torch==2.0.1              
+transformers==4.31.0      
+numpy==1.24.3             
+pandas==2.0.3            
+python-dotenv==1.0.0      
+cryptography==41.0.2      
+pyyaml==6.0.1            
+fastapi==0.100.0          
+uvicorn==0.23.1          
+aiohttp==3.8.5           
+sqlalchemy==2.0.19        
+redis==4.6.0             
+prometheus-client==0.17.1  
+sentry-sdk==1.28.1        
 import subprocess
 import sys
 
