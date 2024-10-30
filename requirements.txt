@@ -2,7 +2,6 @@ pandas
 openai
 logging
 requests
-os
 torch
 psutil
 difflib
