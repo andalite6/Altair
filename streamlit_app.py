@@ -1,4 +1,4 @@
-pip install
+pip 24.3.1
 import streamlit
 import pandas as pd
 import openai
