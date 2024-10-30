@@ -3,6 +3,5 @@ openai
 logging
 requests
 torch
-psutil
-functools 
+psutil 
 lru_cache
