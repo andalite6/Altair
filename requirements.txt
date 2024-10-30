@@ -1,60 +1,14 @@
+streamlit as st
+pandas as pd
 openai
-streamlit==1.25.0        
-torch==2.0.1              
-transformers==4.31.0      
-numpy==1.24.3             
-pandas==2.0.3            
-python-dotenv==1.0.0      
-cryptography==41.0.2      
-pyyaml==6.0.1            
-fastapi==0.100.0          
-uvicorn==0.23.1          
-aiohttp==3.8.5           
-sqlalchemy==2.0.19        
-redis==4.6.0             
-prometheus-client==0.17.1  
-sentry-sdk==1.28.1        
-import subprocess
-import sys
-
-def install_requirements():
-    critical_packages = [
-        'streamlit==1.25.0',
-        'torch==2.0.1',
-        'transformers==4.31.0',
-        'python-dotenv==1.0.0',
-        'fastapi==0.100.0',
-        'sqlalchemy==2.0.19',
-        'prometheus-client==0.17.1'
-    ]
-    
-    for package in critical_packages:
-        try:
-            subprocess.check_call([
-                sys.executable, 
-                "-m", 
-                "pip", 
-                "install", 
-                package
-            ])
-            print(f"Successfully installed {package}")
-        except subprocess.CalledProcessError:
-            print(f"Failed to install {package}")
-            return False
-    return True
-
-# Validation function
-def validate_installation():
-    import pkg_resources
-    installed = {pkg.key for pkg in pkg_resources.working_set}
-    required = {
-        'streamlit',
-        'torch',
-        'transformers',
-        'python-dotenv',
-        'fastapi',
-        'sqlalchemy',
-        'prometheus-client'
-    }
-    missing = required - installed
-    return list(missing)
+logging
+time
+re
+requests
+os
+torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
+from cryptography.fernet import Fernet
+psutil
+difflib
+from functools import lru_cache
