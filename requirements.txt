@@ -9,3 +9,4 @@ xlsxwriter
 openpyxl
 transformers
 cryptography
+dotenv
