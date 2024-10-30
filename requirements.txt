@@ -8,3 +8,4 @@ lru_cache
 xlsxwriter
 openpyxl
 transformers
+cryptography
