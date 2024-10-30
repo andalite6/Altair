@@ -7,3 +7,4 @@ psutil
 lru_cache
 xlsxwriter
 openpyxl
+transformers
