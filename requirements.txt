@@ -6,8 +6,6 @@ re
 requests
 os
 torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
-from cryptography.fernet import Fernet
 psutil
 difflib
-from functools import lru_cache
+functools import lru_cache
