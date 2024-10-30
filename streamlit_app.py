@@ -1,4 +1,4 @@
-pip install --upgrade pip
+pip install
 import streamlit as st
 import pandas as pd
 import openai
