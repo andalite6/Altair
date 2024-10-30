@@ -1,5 +1,5 @@
 pip install
-import streamlit as st
+import streamlit
 import pandas as pd
 import openai
 import logging
