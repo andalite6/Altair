@@ -1,4 +1,4 @@
-pandas as pd
+pandas
 openai
 logging
 time
