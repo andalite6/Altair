@@ -5,3 +5,5 @@ requests
 torch
 psutil 
 lru_cache
+xlsxwriter
+openpyxl
