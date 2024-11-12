@@ -1,3 +1,4 @@
+pip --install-- upgrade pip
 import pandas as pd
 import openai
 import logging
