@@ -11,3 +11,4 @@ openpyxl
 transformers
 cryptography
 dotenv
+pickle
