@@ -1,14 +1,66 @@
-pip 24.3.1
-pandas
-openai
-logging
-requests
-torch
-psutil 
-lru_cache
-xlsxwriter
-openpyxl
-transformers
-cryptography
-dotenv
-pickle
+# requirements.txt
+streamlit>=1.28.0
+pandas>=2.0.0
+openai>=1.0.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+torch>=2.0.0
+transformers>=4.35.0
+cryptography>=41.0.0
+psutil>=5.9.0
+xlsxwriter>=3.1.0
+python-difflib>=0.0.2
+functools-lru-cache>=1.6.4
+
+# Installation Instructions
+
+1. First, create and activate a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Linux/Mac
+# OR
+venv\Scripts\activate     # On Windows
+```
+
+2. Upgrade pip:
+```bash
+python -m pip install --upgrade pip
+```
+
+3. Install the requirements:
+```bash
+pip install -r requirements.txt
+```
+
+4. Create a .env file with your credentials:
+```
+OPENAI_API_KEY=your_openai_key_here
+ENCRYPTION_KEY=your_encryption_key_here
+```
+
+5. Run the Streamlit app:
+```bash
+streamlit run app.py
+```
+
+# Troubleshooting Common Issues
+
+1. If you get SSL certificate errors:
+```bash
+pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org -r requirements.txt
+```
+
+2. If you get version conflicts:
+```bash
+pip install --upgrade --force-reinstall -r requirements.txt
+```
+
+3. For memory issues during torch installation:
+```bash
+pip install torch --no-cache-dir
+```
+
+4. If you get "module not found" errors after installation:
+```bash
+pip install --no-cache-dir -r requirements.txt
+```
