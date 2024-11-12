@@ -1,44 +1,11 @@
-# requirements.txt
-streamlit>=1.28.0
-pandas>=2.0.0
-openai>=1.0.0
-python-dotenv>=1.0.0
-requests>=2.31.0
-torch>=2.0.0
-transformers>=4.35.0
-cryptography>=41.0.0
-psutil>=5.9.0
-xlsxwriter>=3.1.0
-python-difflib>=0.0.2
-functools-lru-cache>=1.6.4
-
-# Installation Instructions
-
-```bash
-python -m venv venv
-source venv/bin/activate  # On Linux/Mac
-# OR
-venv\Scripts\activate     # On Windows
-```
-
-
-```bash
-python -m pip install --upgrade pip
-```
-
-
-```bash
-pip install -r requirements.txt
-```
-
-
-```
-OPENAI_API_KEY=your_openai_key_here
-ENCRYPTION_KEY=your_encryption_key_here
-```
-
-
-```bash
-streamlit run app.py
-```
-
+pip install streamlit
+pip install pandas
+pip install openai
+pip install python-dotenv
+pip install requests
+pip install torch
+pip install transformers
+pip install cryptography
+pip install psutil
+pip install numpy
+pip install xlsxwriter
