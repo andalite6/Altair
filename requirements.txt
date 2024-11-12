@@ -1,8 +1,8 @@
-streamlit
-pandas
-openai
-python-dotenv
-requests
-cryptography
-psutil
-xlsxwriter
+streamlit==1.32.0
+pandas==2.2.0
+openai==1.12.0
+python-dotenv==1.0.1
+requests==2.31.0
+cryptography==42.0.2
+psutil==5.9.8
+xlsxwriter==3.1.9
