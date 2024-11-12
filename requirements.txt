@@ -1,11 +1,8 @@
-pip install streamlit
-pip install pandas
-pip install openai
-pip install python-dotenv
-pip install requests
-pip install torch
-pip install transformers
-pip install cryptography
-pip install psutil
-pip install numpy
-pip install xlsxwriter
+streamlit
+pandas
+openai
+python-dotenv
+requests
+cryptography
+psutil
+xlsxwriter
